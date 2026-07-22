@@ -1,4 +1,4 @@
-# uac-bypass-oneliners
+# uac bypass oneliners
 
 Collection of one-liners to bypass User Account Control (UAC) in Windows. These techniques exploit certain behavior in Windows applications to elevate privileges.
 
